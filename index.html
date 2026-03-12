@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish for My Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="petals" id="petalsContainer"></div>
+    
+    
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress" id="progressBar"></div>
+        </div>
+
+        <!-- Step 1: Greeting -->
+        <div class="step" id="step1">
+            <h1>Happy Birthday, My Love!</h1>
+            <p>Mi Lucy A.K.A Rushikesh Khass Tuzya Sathi Special Banavly.</p>
+            <p>I love You ❤️ Na Mazhe Jane Tamanna</p>
+            <p>Mazi Sonudi</p>
+            <p>Mazi Monudi</p>
+            <p>Mazi Gonds Baal</p>
+            <p>Mazi Sundrshi Baby</p>
+            <p>Mala Mahit Ny Kss Watel Trr But Tried My Best 😘</p>
+            <img src="https://i.ibb.co/20R8sGQ6/7-E3-F33-FA-75-CB-4-B42-A77-D-25-BB6-FE89321.jpg" style="height: 259px;width: 200px;" alt="">
+            <button class="btn" onclick="nextStep()">Open Your Gift</button>
+        </div>
+
+        <!-- Step 2: Name Input -->
+        <div class="step" id="step2">
+            <h2>Tuz Kont Naav Lihu Brr 🤔</h2>
+            <p>Tuch Lih Brr Mazi Shonudi</p>
+            <input type="text" class="name-input" id="nameInput" placeholder="Enter your name">
+            <button class="btn" onclick="saveName()">Continue</button>
+        </div>
+
+        <!-- Step 3: Heart Animation -->
+        <div class="step" id="step3">
+            <h2>For You, <span id="displayName">My Love</span> My Love</h2>
+            <p>Bgh Maza Heart Only Beats For You Feel Krun Bgh!</p>
+            <div class="heart" id="interactiveHeart" onclick="createHearts()"></div>
+            <div id="heartMessage" class="message-box">
+                <p>Every beat of my heart whispers your name, <span id="heartName">my love</span>.</p>
+            </div>
+            <button class="btn" onclick="nextStep()">Continue to Your Message</button>
+        </div>
+
+        <!-- Step 4: Birthday Message -->
+        <div class="step" id="step4">
+            <h2>My Special Message For You</h2>
+            <div class="photo-frame">
+                <!-- Replace with your image path -->
+                <img src="https://i.ibb.co/0yk7h2Bk/IMG-4920.png" alt="Beautiful You">
+            </div>
+            <div id="typedMessage" class="message-box">
+                <p class="typing-effect" id="typingText"></p>
+            </div>
+            <button class="btn" onclick="nextStep()">See Your Surprise</button>
+        </div>
+
+        <!-- Step 5: Memory Lane -->
+        <div class="step" id="step5">
+            <h2>Our Special Moments</h2>
+            <p>Best Moments Kdhich Visru Shqt Ny</p>
+            <div class="memory-container">
+                <div class="polaroid">
+                    <img src="https://i.ibb.co/qYcsn8K8/IMG-6074.jpg" alt="Memory 1">
+                    <div class="polaroid-caption">Our First Meet</div>
+                </div>
+                <div class="polaroid">
+                    <img src="https://i.ibb.co/gb01z8DK/IMG-6639.jpg" alt="Memory 2">
+                    <div class="polaroid-caption">Again Long Distance</div>
+                </div>
+               
+            </div>
+            <button class="btn" onclick="nextStep()">Your Final Surprise</button>
+        </div>
+
+        <!-- Step 6: Final Wish -->
+        <div class="step" id="step6">
+            <h1>🎉 Happy Birthday, <span id="finalName">My Love 💖</span>! 🎂</h1>
+        
+            <p>✨ May your day be filled with endless joy, sweet laughter, and all the love your heart can hold ✨</p>
+            <p>🌟 You light up my world just by being in it — like a million stars in my sky. 🌌</p>
+        
+            <p>⏳ Counting every moment until I can hold you and celebrate this magical day together! 🥰</p>
+        
+            <p>💌 With all my love, forever and always... 💫</p>
+        
+            <div class="signature">Your Love, 💋</div>
+        </div>
+        
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
