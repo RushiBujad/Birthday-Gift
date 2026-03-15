@@ -348,13 +348,14 @@ p {
 
 
 .polaroid {
-    background: white;
-    padding: 15px 15px 60px 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transform: rotate(-5deg);
-    transition: all 0.5s;
-    margin: 30px 0;
-    max-width: 250px;
+  background: white;
+  padding: 15px 15px 40px 15px;   /* adjust padding as needed */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  width: 280px;                    /* adjust width */
+  transform: rotate(3deg);         /* optional tilt */
 }
 
 .polaroid:hover {
@@ -363,17 +364,18 @@ p {
 }
 
 .polaroid img {
-    width: 140px;
-    height: 150px;
-    border: 1px solid #eee;
+  width: 100%;
+  height: auto;
+  display: block;
+  background: white;               /* important */
 }
 
-.polaroid-caption {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
-    color: #d81b60;
-    margin-top: 10px;
+.polaroid .caption {
+  margin-top: 15px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 18px;
+  color: #c23d6a;
+  font-style: italic;
 }
 
 .memory-container {
